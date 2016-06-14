@@ -1,0 +1,13 @@
+{
+    "name": "dengionline/developer_position",
+    "description": "Pre-interview task for PHP-developer",
+    "authors": [
+        {
+            "name": "Титов Илья",
+            "email": "i.titov@dengionline.com"
+        }
+    ],
+    "require": {
+      "yiisoft/yii": "1.1.17"
+    }
+}
