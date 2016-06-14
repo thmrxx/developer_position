@@ -7,13 +7,13 @@
 namespace Xml\Controllers;
 
 
-class DefaultController extends \Controller
+class DefaultController extends \CController
 {
 
     public function actionIndex()
     {
         // Your implementation here
         
-        $this->render('index', []);
+        $this->render('/default/index', []);
     }
 }

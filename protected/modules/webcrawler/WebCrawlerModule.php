@@ -14,7 +14,7 @@ use WebCrawler\Controllers\DefaultController;
  */
 class WebCrawlerModule extends \CWebModule
 {
-    const CONTROLLER_WEB_CRAWLER = 'webCrawler';
+    const CONTROLLER_WEB_CRAWLER = 'webcrawler';
 
     /**
      * {@inheritdoc}
