@@ -7,7 +7,7 @@
 return [
     'name' => 'Pre-interview task for PHP-developer',
     'basePath' => __DIR__ . DIRECTORY_SEPARATOR . '..',
-    'defaultController' => 'webCrawler/webCrawler',
+    'defaultController' => 'webcrawler/webcrawler',
     'components' => [
         'db' => [
             'connectionString' => 'mysql:host=localhost;dbname=test_db;', // Your configuration here
