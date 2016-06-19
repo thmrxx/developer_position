@@ -9,15 +9,11 @@ return [
     'basePath' => __DIR__ . DIRECTORY_SEPARATOR . '..',
     'defaultController' => 'webcrawler/webcrawler',
     'components' => [
-        'db' => [
-            'connectionString' => 'mysql:host=localhost;dbname=test_db;', // Your configuration here
-            'username' => '',
-            'password' => '',
-            'class' => CDbConnection::class,
-        ]
+        'db' => require(dirname(__FILE__).'/db.php'),
     ],
     'aliases' => [
         'app' => dirname(__DIR__),
+        'components' => __DIR__ . '/../components/',
         'modules' => __DIR__ . '/../modules/',
         'vendor' => __DIR__ . '/../../vendor/',
         'Xml' => __DIR__ . '/../modules/xml/',
@@ -32,6 +28,10 @@ return [
         ],
         'webcrawler' => [
             'class' => \WebCrawler\WebCrawlerModule::class
-        ]
+        ],
+        'gii'=>array(
+            'class'=>'system.gii.GiiModule',
+            'password'=>'giipass',
+        ),
     ]
 ];

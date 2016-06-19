@@ -8,6 +8,7 @@
         }
     ],
     "require": {
-      "yiisoft/yii": "1.1.17"
+      "yiisoft/yii": "1.1.17",
+        "guzzlehttp/guzzle": "^6.2"
     }
 }
