@@ -1,7 +1,8 @@
-<?php
-/**
- * @author Ilia Titov <i.titov@dengionline.com>
- * @date   : 14/06/16
- */
+<div class="row">
+    <div class="col-sm-12">
+        <h1>Currency rate</h1>
+        <h3>Set $_GET['currency'] to show rate (default: RUB)</h3>
 
-echo CHtml::tag('p', [], 'Your implementation here');
+        <p><?php echo $curRate['name']; ?> = <?php echo $curRate['value']; ?></p>
+    </div>
+</div>

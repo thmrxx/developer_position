@@ -7,13 +7,19 @@
 namespace Xml\Controllers;
 
 
+use modules\xml\Services\CurrencyService;
+
 class DefaultController extends \CController
 {
 
     public function actionIndex()
     {
-        // Your implementation here
-        
-        $this->render('/default/index', []);
+        $curName = \Yii::app()->request->getQuery('currency', 'rub');
+        $currencyService = new CurrencyService();
+        $curRate = $currencyService->getRate($curName);
+
+        $this->render('/default/index', [
+            'curRate' => $curRate,
+        ]);
     }
 }
