@@ -25,6 +25,8 @@
                 'items' => array(
                     array('label' => 'Поиск', 'url' => array('//webcrawler/webcrawler/index')),
                     array('label' => 'Результаты', 'url' => array('//webcrawler/webcrawler/view')),
+                    array('label' => 'Cache', 'url' => array('//cache/index')),
+                    array('label' => 'Currency rate', 'url' => array('//xml/xml/index')),
                 ),
                 'htmlOptions' => [
                     'class' => 'nav nav-tabs',

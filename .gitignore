@@ -5,3 +5,6 @@ assets
 public/components
 public/assets
 runtime
+protected/components/Cache/Files/*
+!protected/components/Cache/Files/.gitkeep
+
